@@ -17,5 +17,13 @@ namespace MvcTourney3.Data
         public DbSet<MvcTourney3.Models.Player>? Player { get; set; }
 
         public DbSet<MvcTourney3.Models.Team>? Team { get; set; }
+
+        public DbSet<MvcTourney3.Models.Tournament> Tournament { get; set; }
+
+        public DbSet<MvcTourney3.Models.GameTitles> GameTitles { get; set; }
+
+        public DbSet<MvcTourney3.Models.Matches> Matches { get; set; }
+
+        public DbSet<MvcTourney3.Models.MatchGames> MatchGames { get; set; }
     }
 }

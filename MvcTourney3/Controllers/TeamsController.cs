@@ -56,7 +56,7 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Game,School")] Team team)
+        public async Task<IActionResult> Create([Bind("Id,Name,Gametitle,School")] Team team)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Game,School")] Team team)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Gametitle,School")] Team team)
         {
             if (id != team.Id)
             {

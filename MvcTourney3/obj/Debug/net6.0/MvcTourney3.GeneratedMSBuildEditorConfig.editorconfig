@@ -15,12 +15,72 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dclas\source\repos\MvcTourney3\MvcTourney3
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/GameTitles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVRpdGxlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/GameTitles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVRpdGxlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/GameTitles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVRpdGxlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/GameTitles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVRpdGxlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/GameTitles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVRpdGxlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Matches/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Matches/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Matches/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Matches/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Matches/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/MatchGames/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hHYW1lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/MatchGames/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hHYW1lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/MatchGames/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hHYW1lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/MatchGames/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hHYW1lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/MatchGames/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hHYW1lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Players/Create.cshtml]
@@ -69,6 +129,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Teams/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Tournaments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Tournaments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Tournaments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Tournaments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/Tournaments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dclas/source/repos/MvcTourney3/MvcTourney3/Views/_ViewImports.cshtml]
