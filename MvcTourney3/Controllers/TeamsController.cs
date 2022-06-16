@@ -22,9 +22,14 @@ namespace MvcTourney3.Controllers
         // GET: Teams
         public async Task<IActionResult> Index()
         {
-              return _context.Team != null ? 
-                          View(await _context.Team.ToListAsync()) :
-                          Problem("Entity set 'MvcTourney3Context.Team'  is null.");
+              //return _context.Team != null ? 
+              //            View(await _context.Team.ToListAsync()) :
+              //            Problem("Entity set 'MvcTourney3Context.Team'  is null.");
+
+             var teams = _context.Team
+            .Include(c => c.Gametitle)
+            .AsNoTracking();
+            return View(await teams.ToListAsync());
         }
 
         // GET: Teams/Details/5
