@@ -10,6 +10,10 @@
         {
             get; set;
         }
+        public int GametitleId
+        {
+            get; set;
+        }
         public GameTitles Gametitle
         {
             get; set;

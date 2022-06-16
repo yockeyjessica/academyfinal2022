@@ -22,7 +22,12 @@ namespace MvcTourney3.Controllers
         // GET: Tournaments
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Tournament.ToListAsync());
+              //return View(await _context.Tournament.ToListAsync());
+
+            var teams = _context.Tournament
+            .Include(c => c.Gametitle)
+            .AsNoTracking();
+            return View(await teams.ToListAsync());
         }
 
         // GET: Tournaments/Details/5
@@ -46,6 +51,7 @@ namespace MvcTourney3.Controllers
         // GET: Tournaments/Create
         public IActionResult Create()
         {
+            ViewBag.GameTitles = _context.GameTitles;
             return View();
         }
 
@@ -54,7 +60,7 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Season")] Tournament tournament)
+        public async Task<IActionResult> Create([Bind("Id,Season,GametitleId")] Tournament tournament)
         {
             if (ModelState.IsValid)
             {
