@@ -53,6 +53,8 @@ namespace MvcTourney3.Controllers
         // GET: Teams/Create
         public IActionResult Create()
         {
+            //ESSENTIAL FOR CONNECTION TABLES
+            ViewBag.GameTitles = _context.GameTitles;
             return View();
         }
 
@@ -61,7 +63,9 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Gametitle,School")] Team team)
+
+        //ESSENTIAL TO CONNECTING TABLES, CHECK OUT THE BIND
+        public async Task<IActionResult> Create([Bind("Id,Name,School,GametitleId")] Team team)
         {
             if (ModelState.IsValid)
             {
