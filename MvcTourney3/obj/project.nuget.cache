@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zl8f+hYDHaQwbqi8rRBFi3wYKDfQS9Rp7u2Ay6Iw/UbMJpkF3fJxeEywCljJjCuDG5f8NQ4z8BfGGBA2vSlVXg==",
+  "dgSpecHash": "6gKPPKx5kzbCjTl91THAYZVj5Uv4WypmAvXMjsLegusSOqcP7JVCiQFvRazCbZa2oDDLaaSM8RmxSK0gD9HW1w==",
   "success": true,
   "projectFilePath": "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj",
   "expectedPackageFiles": [
@@ -96,6 +96,7 @@
     "/Users/rich/.nuget/packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/rich/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/rich/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "/Users/rich/.nuget/packages/sqlite/3.13.0/sqlite.3.13.0.nupkg.sha512",
     "/Users/rich/.nuget/packages/system.appcontext/4.3.0/system.appcontext.4.3.0.nupkg.sha512",
     "/Users/rich/.nuget/packages/system.buffers/4.3.0/system.buffers.4.3.0.nupkg.sha512",
     "/Users/rich/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
