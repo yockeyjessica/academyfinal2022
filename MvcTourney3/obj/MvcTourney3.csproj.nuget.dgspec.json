@@ -14,7 +14,7 @@
         "outputPath": "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rich/.config/NuGet/NuGet.Config"
+          "/Users/rich/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
