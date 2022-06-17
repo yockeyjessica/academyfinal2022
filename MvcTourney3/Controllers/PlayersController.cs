@@ -22,9 +22,15 @@ namespace MvcTourney3.Controllers
         // GET: Players
         public async Task<IActionResult> Index()
         {
-              return _context.Player != null ? 
-                          View(await _context.Player.ToListAsync()) :
-                          Problem("Entity set 'MvcTourney3Context.Player'  is null.");
+              //return _context.Player != null ? 
+              //            View(await _context.Player.ToListAsync()) :
+              //            Problem("Entity set 'MvcTourney3Context.Player'  is null.");
+
+
+            var player = _context.Player
+            .Include(s => s.Team)
+            .AsNoTracking();
+            return View(await player.ToListAsync());
         }
 
         // GET: Players/Details/5
@@ -48,6 +54,7 @@ namespace MvcTourney3.Controllers
         // GET: Players/Create
         public IActionResult Create()
         {
+            ViewBag.Team = _context.Team;
             return View();
         }
 
@@ -56,7 +63,7 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Team")] Player player)
+        public async Task<IActionResult> Create([Bind("Id,Name,TeamId")] Player player)
         {
             if (ModelState.IsValid)
             {
