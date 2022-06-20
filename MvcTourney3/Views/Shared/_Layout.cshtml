@@ -8,49 +8,54 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MvcTourney3.styles.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MvcTourney3</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        @*<li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>*@
-                        @*<li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>*@
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Teams" asp-action="Index">Teams</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Tournaments" asp-action="Index">Tournaments</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="GameTitles" asp-action="Index">Games</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Players" asp-action="Index">Players</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Matches" asp-action="Index">Matches</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="MatchGames" asp-action="Index">MatchGames</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Sign in/Sign up</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        @*THIS IS THE CODE THAT WONT LET US OVERRIGHT CSS VIA SITE.CSS FILE*@
+        @*<div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">*@
+        @*<div class="container-fluid">*@
+
+        @*<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>*@
+
+        @*<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">*@
+
+
+        @*<ul class="navbar-nav flex-grow-1">*@
+
+        @*<li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>*@
+        @*<li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </li>*@
+
+        <div>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Teams" asp-action="Index">TEAMS</a>
+        </div>
+        <div>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Tournaments" asp-action="Index">TOURNAMENTS</a>
+        </div>
+
+        <div>
+            <a class="navbar-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d" alt="LOGO"></a>
+        </div>
+
+        <div>
+            <a class="nav-link text-dark" asp-area="" asp-controller="GameTitles" asp-action="Index">GAMES</a>
+        </div>
+        <div>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">SIGN IN/SIGN UP</a>
+        </div>
+        @*</ul>*@
+        @*</div>*@
+        @*</div>
+            </div>*@
     </header>
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -58,10 +63,11 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - MvcTourney3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div>
+            <div class="footertext">&copy; 2022 - Nameofthewebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
