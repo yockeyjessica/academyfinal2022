@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcTourney3.Data;
 
@@ -11,9 +12,10 @@ using MvcTourney3.Data;
 namespace MvcTourney3.Migrations
 {
     [DbContext(typeof(MvcTourney3Context))]
-    partial class MvcTourney3ContextModelSnapshot : ModelSnapshot
+    [Migration("20220616201848_CreateWithJohnDB")]
+    partial class CreateWithJohnDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -136,7 +138,7 @@ namespace MvcTourney3.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("GametitleId")
+                    b.Property<int?>("GametitleId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -163,17 +165,12 @@ namespace MvcTourney3.Migrations
                     b.Property<int?>("GametitleId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MatchesId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Season")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("GametitleId");
-
-                    b.HasIndex("MatchesId");
 
                     b.ToTable("Tournament");
                 });
@@ -225,9 +222,7 @@ namespace MvcTourney3.Migrations
                 {
                     b.HasOne("MvcTourney3.Models.GameTitles", "Gametitle")
                         .WithMany()
-                        .HasForeignKey("GametitleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("GametitleId");
 
                     b.Navigation("Gametitle");
                 });
@@ -238,13 +233,7 @@ namespace MvcTourney3.Migrations
                         .WithMany()
                         .HasForeignKey("GametitleId");
 
-                    b.HasOne("MvcTourney3.Models.Matches", "Matches")
-                        .WithMany()
-                        .HasForeignKey("MatchesId");
-
                     b.Navigation("Gametitle");
-
-                    b.Navigation("Matches");
                 });
 
             modelBuilder.Entity("MvcTourney3.Models.GameTitles", b =>

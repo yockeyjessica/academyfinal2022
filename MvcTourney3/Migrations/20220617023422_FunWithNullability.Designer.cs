@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcTourney3.Data;
 
@@ -11,9 +12,10 @@ using MvcTourney3.Data;
 namespace MvcTourney3.Migrations
 {
     [DbContext(typeof(MvcTourney3Context))]
-    partial class MvcTourney3ContextModelSnapshot : ModelSnapshot
+    [Migration("20220617023422_FunWithNullability")]
+    partial class FunWithNullability
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
