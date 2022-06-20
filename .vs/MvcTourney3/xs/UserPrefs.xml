@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{730401A2-0F3E-4134-9421-62BC6A9D2003}|Default">
+  <MonoDevelop.Ide.ItemProperties.MvcTourney3 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MvcTourney3/.gitignore">
+    <Files>
+      <File FileName="MvcTourney3/Controllers/TeamsController.cs" Line="1" Column="1" />
+      <File FileName="MvcTourney3/Views/Teams/Index.cshtml" Line="7" Column="10" />
+      <File FileName="MvcTourney3/Controllers/TournamentsController.cs" Line="1" Column="1" />
+      <File FileName="MvcTourney3/.gitignore" Line="463" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MvcTourney3" expanded="True">
+            <Node name="MvcTourney3" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Teams" expanded="True" />
+                <Node name="Tournaments" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

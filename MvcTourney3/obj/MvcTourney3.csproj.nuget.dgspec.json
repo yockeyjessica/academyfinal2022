@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dclas\\source\\repos\\MvcTourney3\\MvcTourney3\\MvcTourney3.csproj": {}
+    "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dclas\\source\\repos\\MvcTourney3\\MvcTourney3\\MvcTourney3.csproj": {
+    "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dclas\\source\\repos\\MvcTourney3\\MvcTourney3\\MvcTourney3.csproj",
+        "projectUniqueName": "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj",
         "projectName": "MvcTourney3",
-        "projectPath": "C:\\Users\\dclas\\source\\repos\\MvcTourney3\\MvcTourney3\\MvcTourney3.csproj",
-        "packagesPath": "C:\\Users\\dclas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dclas\\source\\repos\\MvcTourney3\\MvcTourney3\\obj\\",
+        "projectPath": "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj",
+        "packagesPath": "/Users/rich/.nuget/packages/",
+        "outputPath": "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\dclas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/rich/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,6 +57,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
             }
           },
           "imports": [
@@ -83,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
