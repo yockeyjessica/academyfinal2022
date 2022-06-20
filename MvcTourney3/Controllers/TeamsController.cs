@@ -26,6 +26,7 @@ namespace MvcTourney3.Controllers
               //            View(await _context.Team.ToListAsync()) :
               //            Problem("Entity set 'MvcTourney3Context.Team'  is null.");
 
+            //need this shit for adding Game titles
              var teams = _context.Team
             .Include(c => c.Gametitle)
             .AsNoTracking();

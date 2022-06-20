@@ -10,11 +10,15 @@
         {
             get; set;
         }
-        public int GametitleId
+        public int? GametitleId
         {
             get; set;
         }
         public GameTitles Gametitle
+        {
+            get; set;
+        }
+        public Matches Matches
         {
             get; set;
         }
