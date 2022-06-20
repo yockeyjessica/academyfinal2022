@@ -26,7 +26,7 @@ namespace MvcTourney3.Controllers
               //            View(await _context.Player.ToListAsync()) :
               //            Problem("Entity set 'MvcTourney3Context.Player'  is null.");
 
-
+            //make a var that includes the Player table (context.Player) and then JOINS(.Include) the Teams (s=> s.Teams)
             var player = _context.Player
             .Include(s => s.Team)
             .AsNoTracking();
@@ -54,6 +54,7 @@ namespace MvcTourney3.Controllers
         // GET: Players/Create
         public IActionResult Create()
         {
+            //viewbag is a box called .whatever (in this case .Team)
             ViewBag.Team = _context.Team;
             return View();
         }
@@ -87,6 +88,7 @@ namespace MvcTourney3.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Team = _context.Team;
             return View(player);
         }
 
@@ -95,7 +97,7 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Team")] Player player)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,TeamId")] Player player)
         {
             if (id != player.Id)
             {

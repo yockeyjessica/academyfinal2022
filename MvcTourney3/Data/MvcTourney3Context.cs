@@ -14,12 +14,12 @@ namespace MvcTourney3.Data
         {
         }
 
-        public DbSet<MvcTourney3.Models.Player>? Player
+        public DbSet<MvcTourney3.Models.Player> Player
         {
             get; set;
         }
 
-        public DbSet<MvcTourney3.Models.Team>? Team
+        public DbSet<MvcTourney3.Models.Team> Team
         {
             get; set;
         }

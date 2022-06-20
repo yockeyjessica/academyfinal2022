@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcTourney3.Data;
 
@@ -11,9 +12,10 @@ using MvcTourney3.Data;
 namespace MvcTourney3.Migrations
 {
     [DbContext(typeof(MvcTourney3Context))]
-    partial class MvcTourney3ContextModelSnapshot : ModelSnapshot
+    [Migration("20220620202008_ElaboratingMatches")]
+    partial class ElaboratingMatches
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,13 +88,13 @@ namespace MvcTourney3.Migrations
                     b.Property<string>("Result")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Team1Id")
+                    b.Property<int>("Team1Id")
                         .HasColumnType("int");
 
                     b.Property<int>("Team1Score")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Team2Id")
+                    b.Property<int>("Team2Id")
                         .HasColumnType("int");
 
                     b.Property<int>("Team2Score")
@@ -205,11 +207,15 @@ namespace MvcTourney3.Migrations
                 {
                     b.HasOne("MvcTourney3.Models.Team", "Team1")
                         .WithMany()
-                        .HasForeignKey("Team1Id");
+                        .HasForeignKey("Team1Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("MvcTourney3.Models.Team", "Team2")
                         .WithMany()
-                        .HasForeignKey("Team2Id");
+                        .HasForeignKey("Team2Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Team1");
 
