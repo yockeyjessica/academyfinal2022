@@ -6,9 +6,15 @@
 $(document).ready(function () {
     var knownBrackets = [2, 4, 8, 16, 32], // brackets with "perfect" proportions (full fields, no byes)
 
-        exampleTeams = _.shuffle(["Nashville Predators", "St. Louis Blues"]), // because a bracket needs some teams!
+    @foreach(var name in ViewBag.Team)
+{
+
+    exampleTeams = _.shuffle([@name.Name]),
 
         bracketCount = 0;
+}
+
+        
 
     /*
      * Build our bracket "model"

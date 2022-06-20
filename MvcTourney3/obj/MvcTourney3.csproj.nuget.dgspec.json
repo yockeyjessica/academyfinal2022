@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\H\\Ruby\\group2\\MvcTourney3\\MvcTourney3.csproj": {}
+    "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\H\\Ruby\\group2\\MvcTourney3\\MvcTourney3.csproj": {
+    "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\H\\Ruby\\group2\\MvcTourney3\\MvcTourney3.csproj",
+        "projectUniqueName": "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj",
         "projectName": "MvcTourney3",
-        "projectPath": "C:\\Users\\H\\Ruby\\group2\\MvcTourney3\\MvcTourney3.csproj",
-        "packagesPath": "C:\\Users\\H\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\H\\Ruby\\group2\\MvcTourney3\\obj\\",
+        "projectPath": "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/MvcTourney3.csproj",
+        "packagesPath": "/Users/rich/.nuget/packages/",
+        "outputPath": "/Users/rich/mvc/actual-mvctourney3/MvcTourney3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\H\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/rich/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +38,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "JavaScriptEngineSwitcher.Core": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "JavaScriptEngineSwitcher.V8": {
+              "target": "Package",
+              "version": "[3.18.3, )"
+            },
+            "MessagePackAnalyzer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.3.112, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -83,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }

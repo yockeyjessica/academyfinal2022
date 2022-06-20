@@ -8,6 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "MvcTourney3/1.0.0": {
         "dependencies": {
+          "JavaScriptEngineSwitcher.Core": "3.3.0",
+          "JavaScriptEngineSwitcher.V8": "3.18.3",
+          "MessagePackAnalyzer": "2.3.112",
           "Microsoft.EntityFrameworkCore.Design": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.6",
@@ -18,11 +21,53 @@
           "MvcTourney3.dll": {}
         }
       },
+      "AdvancedStringBuilder/0.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.Core/3.3.0": {
+        "dependencies": {
+          "AdvancedStringBuilder": "0.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.0"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ru-ru/JavaScriptEngineSwitcher.Core.resources.dll": {
+            "locale": "ru-ru"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.V8/3.18.3": {
+        "dependencies": {
+          "AdvancedStringBuilder": "0.1.0",
+          "JavaScriptEngineSwitcher.Core": "3.3.0",
+          "Microsoft.ClearScript.V8": "7.3.0"
+        },
+        "runtime": {
+          "lib/net5.0/JavaScriptEngineSwitcher.V8.dll": {
+            "assemblyVersion": "3.18.3.0",
+            "fileVersion": "3.18.3.0"
+          }
+        },
+        "resources": {
+          "lib/net5.0/ru-ru/JavaScriptEngineSwitcher.V8.resources.dll": {
+            "locale": "ru-ru"
           }
         }
       },
@@ -51,7 +96,7 @@
           }
         }
       },
-      "MessagePackAnalyzer/2.1.152": {},
+      "MessagePackAnalyzer/2.3.112": {},
       "Microsoft.AspNetCore.Razor.Language/6.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -92,6 +137,35 @@
           "lib/netcoreapp2.0/Microsoft.Build.Locator.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.4.1.10311"
+          }
+        }
+      },
+      "Microsoft.ClearScript.Core/7.3.0": {
+        "runtime": {
+          "lib/net5.0/ClearScript.Core.dll": {
+            "assemblyVersion": "7.3.0.0",
+            "fileVersion": "7.3.0.0"
+          }
+        }
+      },
+      "Microsoft.ClearScript.V8/7.3.0": {
+        "dependencies": {
+          "Microsoft.ClearScript.Core": "7.3.0",
+          "Microsoft.ClearScript.V8.ICUData": "7.3.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net5.0/ClearScript.V8.dll": {
+            "assemblyVersion": "7.3.0.0",
+            "fileVersion": "7.3.0.0"
+          }
+        }
+      },
+      "Microsoft.ClearScript.V8.ICUData/7.3.0": {
+        "runtime": {
+          "lib/netstandard1.0/ClearScript.V8.ICUData.dll": {
+            "assemblyVersion": "7.3.0.0",
+            "fileVersion": "7.3.0.0"
           }
         }
       },
@@ -817,22 +891,22 @@
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "2.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "2.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "2.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "2.1.1.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1065,7 +1139,7 @@
       "Microsoft.VisualStudio.Debugger.Contracts/17.2.0": {
         "dependencies": {
           "MessagePack": "2.1.152",
-          "MessagePackAnalyzer": "2.1.152",
+          "MessagePackAnalyzer": "2.3.112",
           "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
           "System.Collections.Immutable": "6.0.0"
         },
@@ -1127,12 +1201,12 @@
           "runtimes/win-arm/lib/net6.0/dotnet-aspnet-codegenerator-design.exe": {
             "rid": "win-arm",
             "assetType": "runtime",
-            "fileVersion": "6.0.622.31304"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/lib/net6.0/dotnet-aspnet-codegenerator-design.exe": {
             "rid": "win-arm64",
             "assetType": "runtime",
-            "fileVersion": "6.0.622.31304"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1449,12 +1523,12 @@
           "runtimes/win7-x64/native/sqlite3.dll": {
             "rid": "win7-x64",
             "assetType": "native",
-            "fileVersion": "3.13.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win7-x86/native/sqlite3.dll": {
             "rid": "win7-x86",
             "assetType": "native",
-            "fileVersion": "3.13.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -2246,12 +2320,33 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AdvancedStringBuilder/0.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IbN3r5whlJvi8MhCDPVpIb+NVScyUcKSdcJZrnoXFDyzPDISl3AbWouNBYIHRdZdfGuzqCQEhM1vkxbIKqQVaQ==",
+      "path": "advancedstringbuilder/0.1.0",
+      "hashPath": "advancedstringbuilder.0.1.0.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
+    "JavaScriptEngineSwitcher.Core/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aY5dOsBsB7MO2twVRlRcvHBFdkXptIwjSobjPis+DiUi5Cq2YU6M8ICHzaQ1ZXHl7VyWrBMV7cTn98ZrI5ZMHQ==",
+      "path": "javascriptengineswitcher.core/3.3.0",
+      "hashPath": "javascriptengineswitcher.core.3.3.0.nupkg.sha512"
+    },
+    "JavaScriptEngineSwitcher.V8/3.18.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Mh/AL7qT2darZoj+4BLOCH77kxDWFFeuZKqSq0R42DNULCBzzMe3A9nkdhGPNxpS+ZEpITf0vnEJeYRWNLIesA==",
+      "path": "javascriptengineswitcher.v8/3.18.3",
+      "hashPath": "javascriptengineswitcher.v8.3.18.3.nupkg.sha512"
     },
     "MessagePack/2.1.152": {
       "type": "package",
@@ -2267,12 +2362,12 @@
       "path": "messagepack.annotations/2.1.152",
       "hashPath": "messagepack.annotations.2.1.152.nupkg.sha512"
     },
-    "MessagePackAnalyzer/2.1.152": {
+    "MessagePackAnalyzer/2.3.112": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uJhZlGMkXDaFYsH8V9S6o1EyvsUqB9mpU4DVBXNr0DXZVzZMhuLP1IkLj5xK3EKlaAcvkFkZv3eSvuz360wb3Q==",
-      "path": "messagepackanalyzer/2.1.152",
-      "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
+      "sha512": "sha512-wYwPU9Xav1ugyWdJy4wpPmTGspj5XtZZSAWFJa6dF6QFtW0humXBsR5o67p5mY7B1wY5svqPv1SiXIwL2mYHrg==",
+      "path": "messagepackanalyzer/2.3.112",
+      "hashPath": "messagepackanalyzer.2.3.112.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.0": {
       "type": "package",
@@ -2308,6 +2403,27 @@
       "sha512": "sha512-UfyGaxNTjw/r3uWMX/Cv1CPKELo7TCrR5VIahaSKL0WyqmbDT6og9pyjwuhyyUkxC9gk2ElB7oOEySL1OzTZ1g==",
       "path": "microsoft.build.locator/1.4.1",
       "hashPath": "microsoft.build.locator.1.4.1.nupkg.sha512"
+    },
+    "Microsoft.ClearScript.Core/7.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6KkzbwcDmsTD1SBhRtPyibnUhUp0zcXr60/usmrOPHJQ5oDUaViEEzRgAGedoCAeitSNo3Os2HhWs5YOA8wZyA==",
+      "path": "microsoft.clearscript.core/7.3.0",
+      "hashPath": "microsoft.clearscript.core.7.3.0.nupkg.sha512"
+    },
+    "Microsoft.ClearScript.V8/7.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wxZ4YF8/a9ze63WPWg2gg8fSoGbbdoarjPBggCCZZ7zBeDCbqL+fZ1LFgL10CSLhURzmEBdHAagrf2nBkOsMDA==",
+      "path": "microsoft.clearscript.v8/7.3.0",
+      "hashPath": "microsoft.clearscript.v8.7.3.0.nupkg.sha512"
+    },
+    "Microsoft.ClearScript.V8.ICUData/7.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tFmowLhv2iHIkG0qw+ZS0/mpGHCaouezJzYS79aX2ENlQyvT6pyOfm8TBj0e085Z4gLH4AqQypSDLjTIUY7lzA==",
+      "path": "microsoft.clearscript.v8.icudata/7.3.0",
+      "hashPath": "microsoft.clearscript.v8.icudata.7.3.0.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Analyzers/3.3.2": {
       "type": "package",
