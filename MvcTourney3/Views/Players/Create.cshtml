@@ -20,10 +20,13 @@
             <div class="form-group">
                 @*for making dropdown menus that reference other tables, the entire next select tag*@
                 <label asp-for="TeamId" class="control-label"></label>
+                @*this is an html attribute that directs the name variable input back to the BIND command in the Player controller, which bounces it to the Table column also called "TeamId"*@
                 <select name="TeamId">
-                    @foreach(var name in ViewBag.Team)
+                    @*team here is a C# variable that iterates through the viewbag*@
+                    @foreach(var team in ViewBag.Team)
                     {
-                        <option value="@name.Id">@name.Name</option>
+                        @*this makes a dropdown menu of the items in ViewBag, each option has an ID which only the computer sees, and a name that the computer shows the user*@
+                        <option value="@team.Id">@team.Name</option>
                     }
                 </select>
                 <span asp-validation-for="TeamId" class="text-danger"></span>

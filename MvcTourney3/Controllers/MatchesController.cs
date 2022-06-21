@@ -22,7 +22,11 @@ namespace MvcTourney3.Controllers
         // GET: Matches
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Matches.ToListAsync());
+            //make a var that includes the Matches table (context.Matches) and then JOINS(.Include) the table that connects to the Team1 Column
+            var player = _context.Matches
+            .Include(s => s.Team1)
+            .AsNoTracking();
+            return View(await _context.Matches.ToListAsync());
         }
 
         // GET: Matches/Details/5
