@@ -25,8 +25,9 @@ namespace MvcTourney3.Controllers
             //make a var that includes the Matches table (context.Matches) and then JOINS(.Include) the table that connects to the Team1 Column
             var player = _context.Matches
             .Include(s => s.Team1)
+            .Include(s => s.Team2)
             .AsNoTracking();
-            return View(await _context.Matches.ToListAsync());
+            return View(player);
         }
 
         // GET: Matches/Details/5
@@ -50,6 +51,7 @@ namespace MvcTourney3.Controllers
         // GET: Matches/Create
         public IActionResult Create()
         {
+            ViewBag.Team = _context.Team;
             return View();
         }
 
@@ -58,7 +60,7 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Result,Team1W,Team2W")] Matches matches)
+        public async Task<IActionResult> Create([Bind("Id,Result,Team1W,Team2W,Team1Id,Team2Id")] Matches matches)
         {
             if (ModelState.IsValid)
             {
@@ -82,6 +84,7 @@ namespace MvcTourney3.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Team = _context.Team;
             return View(matches);
         }
 
@@ -90,7 +93,7 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Result,Team1W,Team2W")] Matches matches)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Result,Team1W,Team2W,Team1Id,Team2Id")] Matches matches)
         {
             if (id != matches.Id)
             {

@@ -84,6 +84,7 @@ namespace MvcTourney3.Controllers
             {
                 return NotFound();
             }
+            ViewBag.GameTitles = _context.GameTitles;
             return View(tournament);
         }
 
@@ -92,7 +93,7 @@ namespace MvcTourney3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Season")] Tournament tournament)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Season,GametitleId")] Tournament tournament)
         {
             if (id != tournament.Id)
             {
