@@ -2,6 +2,16 @@
 {
     public class Tournament
     {
+        public Team Team
+        {
+            get; set;
+        }
+
+        public int TeamId
+        {
+            get; set;
+        }
+
         public int Id
         {
             get; set;

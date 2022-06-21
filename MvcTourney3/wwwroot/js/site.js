@@ -19,14 +19,6 @@ $(document).ready(function () {
 
     bracketCount = 0;
 
-
-
-
-        //exampleTeams = ["something", "somethingelse"],
-
-
-
-
              
 
             /*
