@@ -1,4 +1,5 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿
+// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
@@ -6,20 +7,34 @@
 $(document).ready(function () {
     var knownBrackets = [2, 4, 8, 16, 32], // brackets with "perfect" proportions (full fields, no byes)
 
-    @foreach(var name in ViewBag.Team)
-{
+        //exampleTeams = _.shuffle(<Team>),
+        //bracketCount = 0;
 
-    exampleTeams = _.shuffle([@name.Name]),
+        //var teams = fetch('/api/BracketTeams/getteams.name')
 
-        bracketCount = 0;
-}
+        exampleTeams = [];
+    fetch('/api/BracketTeams/getteams')
+        .then(response => response.json())
+        .then(data => { data.forEach(team => exampleTeams.push(team.name)) });
 
-        
+    bracketCount = 0;
 
-    /*
-     * Build our bracket "model"
-     */
+
+
+
+        //exampleTeams = ["something", "somethingelse"],
+
+
+
+
+             
+
+            /*
+            * Build our bracket "model"
+            */
     function getBracket(base) {
+
+        console.log(exampleTeams);
 
         var closest = _.find(knownBrackets, function (k) { return k >= base; }),
             byes = closest - base;

@@ -7,11 +7,11 @@ namespace MvcTourney3.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class BracketTeamsController : ControllerBase
     {
         private readonly MvcTourney3Context _context;
 
-        public ValuesController(MvcTourney3Context context)
+        public BracketTeamsController(MvcTourney3Context context)
         {
             _context = context;
         }
