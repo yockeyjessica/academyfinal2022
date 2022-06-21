@@ -16,9 +16,9 @@ html {
         flex-direction: column;
     }
 
-    img {
+/*    img {
         display: none !important;
-    }
+    }*/
 }
 
 
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: linear-gradient(to top, black 0%, #330867 100%);
 }
 
 header {
@@ -49,14 +49,14 @@ header {
 }
 
 .navmenu:hover {
-    color: greenyellow;
+    color: #49fb35;
 }
 
 footer {
     color: white;
     font-family: 'Oswald';
     font-size: .87em;
-    background-color: #1F1F41;
+    background-color: #0B022C;
     padding: 2em;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ a {
 }
 
 a:hover {
-    color: greenyellow;
+    color: #49fb35;
 }
 
 img {
@@ -88,4 +88,3 @@ img {
 tr {
     color: white;
 }
-
