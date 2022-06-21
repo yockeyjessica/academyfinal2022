@@ -29,6 +29,7 @@ namespace MvcTourney3.Controllers
             //need this shit for adding Game titles
              var teams = _context.Team
             .Include(c => c.Gametitle)
+            .Include(c => c.Players)
             .AsNoTracking();
             return View(await teams.ToListAsync());
         }
