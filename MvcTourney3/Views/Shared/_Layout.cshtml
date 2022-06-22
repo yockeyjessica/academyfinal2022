@@ -11,7 +11,6 @@
 
 <body>
     <header>
-        @*THIS IS THE CODE THAT WONT LET US OVERRIGHT CSS VIA SITE.CSS FILE*@
         @*<div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">*@
         @*<div class="container-fluid">*@
 
@@ -40,7 +39,7 @@
         </div>
 
         <div>
-            <a class="navmenu" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://i.imgur.com/VFGG4lp.png" alt="LOGO"></a>
+            <a class="navmenu" asp-area="" asp-controller="Home" asp-action="Index"><img id="headerlogo" src="https://i.imgur.com/VFGG4lp.png" alt="LOGO"></a>
         </div>
 
         <div>
@@ -55,7 +54,6 @@
             </div>*@
     </header>
 
-
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -67,7 +65,7 @@
     <footer class="border-top footer text-muted">
         <div>
             <div>
-                <a><img src="https://i.imgur.com/VFGG4lp.png" alt="LOGO"></a>
+                <a><img id="footerlogo"src="https://i.imgur.com/VFGG4lp.png" alt="LOGO"></a>
             </div>
         
             <div>

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap');
+
 html {
     font-size: 14px;
 }
@@ -16,11 +18,10 @@ html {
         flex-direction: column;
     }
 
-/*    img {
+    #footerlogo {
         display: none !important;
-    }*/
+    }
 }
-
 
 html {
     position: relative;
@@ -72,6 +73,13 @@ h1 {
     font-family: 'Oswald';
 }
 
+h2 {
+    color: white;
+    font-family: 'Oswald';
+    font-weight: 200;
+    font-size: 3em;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -89,17 +97,22 @@ img {
 .container {
     color: white;
     min-height: 80vh;
-    /*overflow: scroll;*/
 }
 
 tr {
     color: white;
 }
 
+footerbumper {
+    height: 30vh;
+    width: 100vw;
+}
+
 tbody{
     overflow: scroll;
 }
-.footerbumper{
-    height: 30vh;
-    width: 100vw;
+
+.pb-3 {
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
