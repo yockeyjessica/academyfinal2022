@@ -5,6 +5,8 @@ using MvcTourney3.Data;
 
 namespace MvcTourney3.Controllers
 {
+    //this controller transforms the teams table into a readable api
+    //accessible through localhost:xxxx/api/BracketTeams/getteams
     [Route("api/[controller]")]
     [ApiController]
     public class BracketTeamsController : ControllerBase
