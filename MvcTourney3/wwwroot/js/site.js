@@ -4,30 +4,25 @@
 
 // Write your JavaScript code.
 
+//Javascript below courtesy of https://gist.github.com/sterlingwes/4199115
+// the first example here could also be useful, generating brackets with line items: https://blog.codepen.io/2018/02/16/need-make-tournament-bracket/
+
 $(document).ready(function () {
     var knownBrackets = [2, 4, 8, 16, 32], // brackets with "perfect" proportions (full fields, no byes)
 
+        //old example code below
         //exampleTeams = _.shuffle(<Team>),
+        //or exampleTeams = ["something", "somethingelse"],
         //bracketCount = 0;
-
         //var teams = fetch('/api/BracketTeams/getteams.name')
 
+        //here we make a array of team names, and fetch and push the table data from teams
         exampleTeams = [];
     fetch('/api/BracketTeams/getteams')
         .then(response => response.json())
         .then(data => { data.forEach(team => exampleTeams.push(team.name)) });
 
     bracketCount = 0;
-
-
-
-
-        //exampleTeams = ["something", "somethingelse"],
-
-
-
-
-             
 
             /*
             * Build our bracket "model"
