@@ -29,6 +29,9 @@ html {
 
 body {
     background-image: linear-gradient(to top, black 0%, #330867 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -60,6 +63,8 @@ footer {
     padding: 2em;
     display: flex;
     align-items: center;
+    height:30vh;
+    position: relative;
 }
 
 h1 {
@@ -83,8 +88,18 @@ img {
 
 .container {
     color: white;
+    height: auto
+    /*overflow: scroll;*/
 }
 
 tr {
     color: white;
+}
+
+tbody{
+    overflow: scroll;
+}
+.footerbumper{
+    height: 30vh;
+    width: 100vw;
 }
